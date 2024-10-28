@@ -1,4 +1,7 @@
 package br.com.engelryan.todolist.Task;
 
-public interface TaskRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface TaskRepository extends JpaRepository<TaskModel, Long> {
+
 }
